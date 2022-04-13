@@ -1,0 +1,55 @@
+
+<cu-custom bgColor="bg-pink" isBack="{{true}}">
+ <view slot="backText">返回</view> 
+  <view slot="content">今日穿搭推荐</view>
+</cu-custom>
+
+<scroll-view scroll-y  class="scrollPage" style="background-image: url('/images/wardrobe.png'); height: 300px;"></scroll-view>
+
+<view class="cu-bar bg-white margin-top solid-bottom">
+    <view class="action">
+      <text class="cuIcon-titles text-blue" style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; "> 上衣</text>
+    </view>
+    <view class="action"></view>
+  </view>
+  <view class="bg-pink padding">
+    <view class="grid col-3 grid-square">
+      <view class="bg-img"  style="background-image:url('/images/tabbar3/1.jpg');"></view>
+      <view class="bg-img"  style="background-image:url('/images/tabbar3/2.jpg');"></view>
+      <view class="bg-img"  style="background-image:url('/images/tabbar3/3.jpg');"></view>
+      <view class="bg-img"  style="background-image:url('/images/tabbar3/4.jpg');"></view>
+      <view class="bg-img"  style="background-image:url('/images/tabbar3/5.jpg');"></view>
+    </view>
+  </view>
+
+  <view class="cu-bar bg-white margin-top solid-bottom">
+    <view class="action">
+      <text class="cuIcon-titles text-blue" style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">  裤子 </text>
+    </view>
+    <view class="action"></view>
+  </view>
+  <view class="bg-pink padding">
+    <view class="grid col-3 grid-square">
+      <view class="bg-img"  style="background-image:url('/images/tabbar4/1.jpg');"></view>
+      <view class="bg-img"  style="background-image:url('/images/tabbar4/2.jpg');"></view>
+      <view class="bg-img"  style="background-image:url('/images/tabbar4/3.jpg');"></view>
+      <view class="bg-img"  style="background-image:url('/images/tabbar4/4.jpg');"></view>
+      <view class="bg-img"  style="background-image:url('/images/tabbar4/5.jpg');"></view>
+    </view>
+  </view>
+
+  <view class="cu-bar bg-white margin-top solid-bottom">
+    <view class="action">
+      <text class="cuIcon-titles text-blue" style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; "> 配饰</text>
+    </view>
+    <view class="action"></view>
+  </view>
+  <view class="bg-pink padding">
+    <view class="grid col-3 grid-square">
+      <view class="bg-img"  style="background-image:url('/images/tabbar5/1.jpg');"></view>
+      <view class="bg-img"  style="background-image:url('/images/tabbar5/2.jpg');"></view>
+      <view class="bg-img"  style="background-image:url('/images/tabbar5/3.jpg');"></view>
+      <view class="bg-img"  style="background-image:url('/images/tabbar5/4.jpg');"></view>
+      <view class="bg-img"  style="background-image:url('/images/tabbar5/5.jpg');"></view>
+    </view>
+  </view>

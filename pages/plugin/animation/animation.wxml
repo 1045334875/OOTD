@@ -1,0 +1,14 @@
+<cu-custom bgColor="bg-pink"  isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">风格选择</view>
+</cu-custom>
+<view class="cu-bar bg-white">
+  <view class="action">
+    
+  </view>
+</view>
+<view class="padding-sm">
+  <view class="flex flex-wrap justify-around">
+    <button class="cu-btn bg-{{item.color}} animation-{{animation==item.name?item.name:''}} margin-sm basis-sm shadow" bindtap="toggle" data-class="{{item.name}}" wx:for="{{list}}" wx:key="{{index}}">{{item.name}}</button>
+  </view>
+</view>

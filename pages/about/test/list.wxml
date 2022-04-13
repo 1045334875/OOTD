@@ -1,0 +1,6 @@
+<cu-custom bgColor="bg-pink" isBack="{{true}}"><view slot="backText">添加</view></cu-custom>
+<view class="padding margin">
+  <navigator url="filter" class="bg-grey padding radius">
+    <text>note：该部分功能待开发当中...</text>
+  </navigator>
+</view>

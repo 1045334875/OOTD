@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "basics": "/pages/plugin/home/home",
+    "component": "/pages/about/home/home"
+  }
+}

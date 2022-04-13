@@ -1,0 +1,54 @@
+<cu-custom bgColor="bg-pink" isBack="{{true}}">
+ <view slot="backText">返回</view> 
+  <view slot="content">今日穿搭推荐</view>
+</cu-custom>
+
+<scroll-view scroll-y  class="scrollPage" style="background-image: url('/images/back2.png'); height: 170px;">
+
+</scroll-view>
+
+<view class="cu-bar bg-white margin-top">
+  <view class="action">
+    <text class="cuIcon-titles text-blue" style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; ">   今日穿搭推荐</text>
+  </view>
+</view>
+<view class="tower-swiper" bindtouchmove="towerMove" bindtouchstart="towerStart" bindtouchend="towerEnd">
+  <view class="tower-item {{item.zIndex==1?'none':''}}" wx:for="{{swiperList}}"  style="--index:{{item.zIndex}};--left:{{item.mLeft}}">
+    <view class="swiper-item">
+      <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+      <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+    </view>
+  </view>
+</view>
+
+<view class="cu-bar bg-white margin-top solid-bottom">
+    <view class="action">
+      <text class="cuIcon-titles text-blue" style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; ">   今日元素      Look1</text>
+    </view>
+    <view class="action"></view>
+  </view>
+  <view class="bg-pink padding">
+    <view class="grid col-3 grid-square">
+      <view class="bg-img"  style="background-image:url('/images/tabbar1/1.jpg');"></view>
+      <view class="bg-img"  style="background-image:url('/images/tabbar1/2.jpg');"></view>
+      <view class="bg-img"  style="background-image:url('/images/tabbar1/3.jpg');"></view>
+      <view class="bg-img"  style="background-image:url('/images/tabbar1/4.jpg');"></view>
+      <view class="bg-img"  style="background-image:url('/images/tabbar1/5.jpg');"></view>
+    </view>
+  </view>
+
+  <view class="cu-bar bg-white margin-top solid-bottom">
+    <view class="action">
+      <text class="cuIcon-titles text-blue" style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">  今日元素     Look2  </text>
+    </view>
+    <view class="action"></view>
+  </view>
+  <view class="bg-pink padding">
+    <view class="grid col-3 grid-square">
+      <view class="bg-img"  style="background-image:url('/images/tabbar2/1.jpg');"></view>
+      <view class="bg-img"  style="background-image:url('/images/tabbar2/2.jpg');"></view>
+      <view class="bg-img"  style="background-image:url('/images/tabbar2/3.jpg');"></view>
+      <view class="bg-img"  style="background-image:url('/images/tabbar2/4.jpg');"></view>
+      <view class="bg-img"  style="background-image:url('/images/tabbar2/5.jpg');"></view>
+    </view>
+  </view>

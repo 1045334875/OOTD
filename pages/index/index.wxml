@@ -1,0 +1,13 @@
+<basics wx:if="{{PageCur=='basics'}}"></basics>
+<component wx:if="{{PageCur=='component'}}"></component>
+
+<view class="cu-bar tabbar bg-white shadow foot">
+  <view class="action" bindtap="NavChange" data-cur="basics">
+
+    <view class="{{PageCur=='basics'?'text-dark':'text-gray'}}" style="font-size: large; ">衣服穿搭</view>
+  </view>
+  <view class="action" bindtap="NavChange" data-cur="component">
+
+    <view class="{{PageCur=='component'?'text-dark':'text-gray'}}" style="font-size: large; ">个人信息</view>
+  </view>
+  </view>
